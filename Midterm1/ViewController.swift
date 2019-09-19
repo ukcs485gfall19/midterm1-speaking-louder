@@ -11,12 +11,16 @@ import MapKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var Map: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    @IBOutlet weak var Map: MKMapView!
+    @IBAction func ViewLocation(_ sender: Any) {
+    }
+    
     
 }
 
