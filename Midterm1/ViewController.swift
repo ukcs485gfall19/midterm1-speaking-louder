@@ -24,6 +24,7 @@ class ViewController: UIViewController {
 
     @IBAction func ViewLocation(_ sender: Any) {
         // Zoom to  User's location
+        Map.ViewLocation()
     }
     
     
@@ -33,5 +34,15 @@ extension ViewController: CLLocationManagerDelegate
 {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         Map.showsUserLocation = (status == .authorizedAlways)
+    }
+}
+
+extension MKMapView
+{
+    func ViewLocation()
+    {
+        guard let coordinate = userLocation.location?.coordinate else { return }
+        let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
+        setRegion(region, animated: true)
     }
 }
