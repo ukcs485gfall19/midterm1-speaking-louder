@@ -23,9 +23,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFY-Bq-oJm">
-                                <rect key="frame" x="130" y="603" width="115" height="30"/>
+                                <rect key="frame" x="112" y="603" width="152" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Current Location"/>
+                                <state key="normal" title="View Current Location"/>
                                 <connections>
                                     <action selector="ViewLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z8O-Ze-9vn"/>
                                 </connections>
