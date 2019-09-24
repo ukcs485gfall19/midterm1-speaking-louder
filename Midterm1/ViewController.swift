@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
+        // request for the user's location
         locationManager.requestAlwaysAuthorization()
         // Do any additional setup after loading the view.
     }
@@ -33,6 +34,7 @@ class ViewController: UIViewController {
 extension ViewController: CLLocationManagerDelegate
 {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        // if authorized, show the user's location
         Map.showsUserLocation = (status == .authorizedAlways)
     }
 }
@@ -41,8 +43,11 @@ extension MKMapView
 {
     func ViewLocation()
     {
+        // get the coordinates of the user's location else return
         guard let coordinate = userLocation.location?.coordinate else { return }
+        // set the region around the user
         let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
+        // zoom into the selected region
         setRegion(region, animated: true)
     }
 }
