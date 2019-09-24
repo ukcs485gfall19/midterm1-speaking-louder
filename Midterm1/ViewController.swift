@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func ViewLocation(_ sender: Any) {
-        // Zoom to  User's location
+        // Zoom to User's location
         Map.ViewLocation()
     }
     
