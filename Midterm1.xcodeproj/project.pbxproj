@@ -12,8 +12,6 @@
 		DD69D7C9233141900009D62E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD69D7C7233141900009D62E /* Main.storyboard */; };
 		DD69D7CB233141920009D62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD69D7CA233141920009D62E /* Assets.xcassets */; };
 		DD69D7CE233141920009D62E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD69D7CC233141920009D62E /* LaunchScreen.storyboard */; };
-		DD69D7D9233141920009D62E /* Midterm1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69D7D8233141920009D62E /* Midterm1Tests.swift */; };
-		DD69D7E4233141920009D62E /* Midterm1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69D7E3233141920009D62E /* Midterm1UITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +40,7 @@
 		DD69D7CD233141920009D62E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD69D7CF233141920009D62E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD69D7D4233141920009D62E /* Midterm1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Midterm1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD69D7D8233141920009D62E /* Midterm1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Midterm1Tests.swift; sourceTree = "<group>"; };
-		DD69D7DA233141920009D62E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD69D7DF233141920009D62E /* Midterm1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Midterm1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD69D7E3233141920009D62E /* Midterm1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Midterm1UITests.swift; sourceTree = "<group>"; };
-		DD69D7E5233141920009D62E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				DD69D7C2233141900009D62E /* Midterm1 */,
-				DD69D7D7233141920009D62E /* Midterm1Tests */,
-				DD69D7E2233141920009D62E /* Midterm1UITests */,
 				DD69D7C1233141900009D62E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,24 +97,6 @@
 				DD69D7CF233141920009D62E /* Info.plist */,
 			);
 			path = Midterm1;
-			sourceTree = "<group>";
-		};
-		DD69D7D7233141920009D62E /* Midterm1Tests */ = {
-			isa = PBXGroup;
-			children = (
-				DD69D7D8233141920009D62E /* Midterm1Tests.swift */,
-				DD69D7DA233141920009D62E /* Info.plist */,
-			);
-			path = Midterm1Tests;
-			sourceTree = "<group>";
-		};
-		DD69D7E2233141920009D62E /* Midterm1UITests */ = {
-			isa = PBXGroup;
-			children = (
-				DD69D7E3233141920009D62E /* Midterm1UITests.swift */,
-				DD69D7E5233141920009D62E /* Info.plist */,
-			);
-			path = Midterm1UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD69D7D9233141920009D62E /* Midterm1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD69D7E4233141920009D62E /* Midterm1UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
