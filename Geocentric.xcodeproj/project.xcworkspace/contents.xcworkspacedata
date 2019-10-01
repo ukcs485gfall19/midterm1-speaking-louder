@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Midterm1.xcodeproj">
+      location = "self:/Users/nathanchurch/Documents/midterm1-speaking-louder/Geocentric.xcodeproj">
    </FileRef>
 </Workspace>

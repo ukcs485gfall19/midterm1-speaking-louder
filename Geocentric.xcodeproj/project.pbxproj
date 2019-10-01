@@ -32,15 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DD69D7C0233141900009D62E /* Midterm1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Midterm1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD69D7C0233141900009D62E /* Geocentric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geocentric.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD69D7C3233141900009D62E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD69D7C5233141900009D62E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD69D7C8233141900009D62E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD69D7CA233141920009D62E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD69D7CD233141920009D62E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD69D7CF233141920009D62E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD69D7D4233141920009D62E /* Midterm1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Midterm1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD69D7DF233141920009D62E /* Midterm1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Midterm1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD69D7D4233141920009D62E /* GeocentricTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeocentricTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD69D7DF233141920009D62E /* GeocentricUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeocentricUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +79,9 @@
 		DD69D7C1233141900009D62E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DD69D7C0233141900009D62E /* Midterm1.app */,
-				DD69D7D4233141920009D62E /* Midterm1Tests.xctest */,
-				DD69D7DF233141920009D62E /* Midterm1UITests.xctest */,
+				DD69D7C0233141900009D62E /* Geocentric.app */,
+				DD69D7D4233141920009D62E /* GeocentricTests.xctest */,
+				DD69D7DF233141920009D62E /* GeocentricUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,9 +102,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DD69D7BF233141900009D62E /* Midterm1 */ = {
+		DD69D7BF233141900009D62E /* Geocentric */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD69D7E8233141920009D62E /* Build configuration list for PBXNativeTarget "Midterm1" */;
+			buildConfigurationList = DD69D7E8233141920009D62E /* Build configuration list for PBXNativeTarget "Geocentric" */;
 			buildPhases = (
 				DD69D7BC233141900009D62E /* Sources */,
 				DD69D7BD233141900009D62E /* Frameworks */,
@@ -114,14 +114,14 @@
 			);
 			dependencies = (
 			);
-			name = Midterm1;
+			name = Geocentric;
 			productName = Midterm1;
-			productReference = DD69D7C0233141900009D62E /* Midterm1.app */;
+			productReference = DD69D7C0233141900009D62E /* Geocentric.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DD69D7D3233141920009D62E /* Midterm1Tests */ = {
+		DD69D7D3233141920009D62E /* GeocentricTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD69D7EB233141920009D62E /* Build configuration list for PBXNativeTarget "Midterm1Tests" */;
+			buildConfigurationList = DD69D7EB233141920009D62E /* Build configuration list for PBXNativeTarget "GeocentricTests" */;
 			buildPhases = (
 				DD69D7D0233141920009D62E /* Sources */,
 				DD69D7D1233141920009D62E /* Frameworks */,
@@ -132,14 +132,14 @@
 			dependencies = (
 				DD69D7D6233141920009D62E /* PBXTargetDependency */,
 			);
-			name = Midterm1Tests;
+			name = GeocentricTests;
 			productName = Midterm1Tests;
-			productReference = DD69D7D4233141920009D62E /* Midterm1Tests.xctest */;
+			productReference = DD69D7D4233141920009D62E /* GeocentricTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DD69D7DE233141920009D62E /* Midterm1UITests */ = {
+		DD69D7DE233141920009D62E /* GeocentricUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD69D7EE233141920009D62E /* Build configuration list for PBXNativeTarget "Midterm1UITests" */;
+			buildConfigurationList = DD69D7EE233141920009D62E /* Build configuration list for PBXNativeTarget "GeocentricUITests" */;
 			buildPhases = (
 				DD69D7DB233141920009D62E /* Sources */,
 				DD69D7DC233141920009D62E /* Frameworks */,
@@ -150,9 +150,9 @@
 			dependencies = (
 				DD69D7E1233141920009D62E /* PBXTargetDependency */,
 			);
-			name = Midterm1UITests;
+			name = GeocentricUITests;
 			productName = Midterm1UITests;
-			productReference = DD69D7DF233141920009D62E /* Midterm1UITests.xctest */;
+			productReference = DD69D7DF233141920009D62E /* GeocentricUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -178,7 +178,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DD69D7BB233141900009D62E /* Build configuration list for PBXProject "Midterm1" */;
+			buildConfigurationList = DD69D7BB233141900009D62E /* Build configuration list for PBXProject "Geocentric" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -191,9 +191,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DD69D7BF233141900009D62E /* Midterm1 */,
-				DD69D7D3233141920009D62E /* Midterm1Tests */,
-				DD69D7DE233141920009D62E /* Midterm1UITests */,
+				DD69D7BF233141900009D62E /* Geocentric */,
+				DD69D7D3233141920009D62E /* GeocentricTests */,
+				DD69D7DE233141920009D62E /* GeocentricUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,12 +254,12 @@
 /* Begin PBXTargetDependency section */
 		DD69D7D6233141920009D62E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DD69D7BF233141900009D62E /* Midterm1 */;
+			target = DD69D7BF233141900009D62E /* Geocentric */;
 			targetProxy = DD69D7D5233141920009D62E /* PBXContainerItemProxy */;
 		};
 		DD69D7E1233141920009D62E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DD69D7BF233141900009D62E /* Midterm1 */;
+			target = DD69D7BF233141900009D62E /* Geocentric */;
 			targetProxy = DD69D7E0233141920009D62E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -453,7 +453,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Midterm1.app/Midterm1";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geocentric.app/Geocentric";
 			};
 			name = Debug;
 		};
@@ -474,7 +474,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Midterm1.app/Midterm1";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geocentric.app/Geocentric";
 			};
 			name = Release;
 		};
@@ -521,7 +521,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DD69D7BB233141900009D62E /* Build configuration list for PBXProject "Midterm1" */ = {
+		DD69D7BB233141900009D62E /* Build configuration list for PBXProject "Geocentric" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD69D7E6233141920009D62E /* Debug */,
@@ -530,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD69D7E8233141920009D62E /* Build configuration list for PBXNativeTarget "Midterm1" */ = {
+		DD69D7E8233141920009D62E /* Build configuration list for PBXNativeTarget "Geocentric" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD69D7E9233141920009D62E /* Debug */,
@@ -539,7 +539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD69D7EB233141920009D62E /* Build configuration list for PBXNativeTarget "Midterm1Tests" */ = {
+		DD69D7EB233141920009D62E /* Build configuration list for PBXNativeTarget "GeocentricTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD69D7EC233141920009D62E /* Debug */,
@@ -548,7 +548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD69D7EE233141920009D62E /* Build configuration list for PBXNativeTarget "Midterm1UITests" */ = {
+		DD69D7EE233141920009D62E /* Build configuration list for PBXNativeTarget "GeocentricUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD69D7EF233141920009D62E /* Debug */,
