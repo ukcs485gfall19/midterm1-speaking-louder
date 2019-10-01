@@ -15,9 +15,9 @@
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This App uses your location to pinpoint your location</string>
+	<string>Geocentric uses your location to pinpoint your location and share it with people you give access</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>This App uses your location to pinpoint your location</string>
+	<string>Geocentric uses your location to pinpoint your location and share it with people you give access</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
