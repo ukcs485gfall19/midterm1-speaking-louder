@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     
     @IBAction func SendAlert(_ sender: Any) {
         // Send a test message as an alert
+        displayAlert(withAlert: "Test", message: "Hello World!")
     }
     
 }
@@ -52,5 +53,16 @@ extension MKMapView
         let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
         // zoom into the selected region
         setRegion(region, animated: true)
+    }
+}
+
+extension UIViewController
+{
+    func displayAlert(withAlert title: String?, message: String?)
+    {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
 }
