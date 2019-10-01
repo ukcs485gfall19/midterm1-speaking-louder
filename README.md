@@ -1,5 +1,4 @@
-# midterm1-speaking-louder
-midterm1-speaking-louder created by GitHub Classroom
+# Geocentric
 
 Project page for Midterm 1
 
