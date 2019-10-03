@@ -106,7 +106,15 @@
                             <outlet property="delegate" destination="f9m-jE-8qm" id="kMp-WR-MoS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="tqi-uv-yYd"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="tqi-uv-yYd">
+                        <barButtonItem key="leftBarButtonItem" image="arrowshape.turn.up.left.fill" catalog="system" id="Yrh-sA-lQd">
+                            <connections>
+                                <action selector="ViewLocation:" destination="BYZ-38-t0r" id="cFo-m5-qIG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQd-uu-GPU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
