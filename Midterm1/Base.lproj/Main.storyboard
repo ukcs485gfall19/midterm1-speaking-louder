@@ -16,28 +16,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-oc-8xE">
-                                <rect key="frame" x="1" y="143" width="374" height="415"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-oc-8xE">
+                                <rect key="frame" x="0.0" y="110" width="375" height="557"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbI-Im-fxh">
-                                <rect key="frame" x="151" y="79" width="73" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Send Alert"/>
-                                <connections>
-                                    <action selector="SendAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K9K-9e-tFb"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jea-oc-8xE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="Bta-TN-qkm"/>
+                            <constraint firstItem="Jea-oc-8xE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U75-kt-4RB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jea-oc-8xE" secondAttribute="bottom" id="dKw-ET-sOe"/>
+                            <constraint firstItem="Jea-oc-8xE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="m1Q-z9-bt0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="YI1-GC-trd">
+                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" image="arrowshape.turn.up.left.fill" catalog="system" id="Dk7-3B-osQ">
                             <connections>
                                 <action selector="ViewLocation:" destination="BYZ-38-t0r" id="S6f-gg-0bu"/>
                             </connections>
                         </barButtonItem>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kbI-Im-fxh">
+                            <rect key="frame" x="151" y="7" width="73" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="73" id="S5Q-C3-bE0"/>
+                            </constraints>
+                            <state key="normal" title="Send Alert"/>
+                            <connections>
+                                <action selector="SendAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K9K-9e-tFb"/>
+                            </connections>
+                        </button>
                         <barButtonItem key="rightBarButtonItem" image="plus.app" catalog="system" id="Syp-6A-KJ9">
                             <connections>
                                 <segue destination="nr1-3v-uu8" kind="presentation" id="flg-RC-Wma"/>
@@ -50,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727" y="233"/>
+            <point key="canvasLocation" x="725.60000000000002" y="232.53373313343329"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A7s-S0-4eg">
