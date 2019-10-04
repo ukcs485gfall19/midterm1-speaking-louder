@@ -73,17 +73,3 @@ extension UIViewController
     }
 }
 
-func checkUnit(Unit: String, size: Double) -> Double {
-    switch Unit {
-    case "meters":
-        return size
-    case "feet":
-        return size*0.3048
-    case "miles":
-        return size*1609.34
-    case "kilometers":
-        return size*1000
-    default:
-        return size
-    }
-}
