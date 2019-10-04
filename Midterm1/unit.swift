@@ -15,7 +15,7 @@ var int_type:DistanceUnit = .meter
 // 2019-10-04
 //
 // Basic structure for distance units.
-enum DistanceUnit: Int {
+enum DistanceUnit: Int, CaseIterable {
     case foot
     case kilometer
     case meter
