@@ -68,6 +68,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="Map" destination="Jea-oc-8xE" id="fH6-2h-ZqZ"/>
+                        <outlet property="segmentControl" destination="euS-HR-xgT" id="zKA-Po-XL6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -128,6 +129,9 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="radiusEntry:" destination="M1w-PI-iEK" eventType="editingDidEnd" id="oP4-CO-G2x"/>
+                                                    </connections>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Radius (m)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsJ-zn-1da">
                                                     <rect key="frame" x="39" y="38" width="83" height="21"/>
@@ -181,6 +185,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQd-uu-GPU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="M1w-PI-iEK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2308" y="232.53373313343329"/>
         </scene>
