@@ -16,16 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-oc-8xE">
-                                <rect key="frame" x="0.0" y="110" width="375" height="557"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-oc-8xE">
+                                <rect key="frame" x="0.0" y="196" width="375" height="471"/>
                             </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="euS-HR-xgT">
+                                <rect key="frame" x="16" y="136" width="343" height="32"/>
+                                <segments>
+                                    <segment title="Meters"/>
+                                    <segment title="Feet"/>
+                                    <segment title="Miles"/>
+                                    <segment title="Kilometers"/>
+                                </segments>
+                                <connections>
+                                    <action selector="Units:" destination="BYZ-38-t0r" eventType="valueChanged" id="IJX-nG-uEF"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Display Units" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txw-JO-BfW">
+                                <rect key="frame" x="137" y="96" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Jea-oc-8xE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="Bta-TN-qkm"/>
+                            <constraint firstItem="Jea-oc-8xE" firstAttribute="top" secondItem="euS-HR-xgT" secondAttribute="bottom" constant="20" id="4Fz-Jv-1py"/>
+                            <constraint firstItem="txw-JO-BfW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="8LE-9L-hwK"/>
+                            <constraint firstItem="Jea-oc-8xE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Bta-TN-qkm"/>
+                            <constraint firstItem="euS-HR-xgT" firstAttribute="top" secondItem="txw-JO-BfW" secondAttribute="bottom" constant="28" id="OyQ-i6-6Ws"/>
                             <constraint firstItem="Jea-oc-8xE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U75-kt-4RB"/>
+                            <constraint firstItem="txw-JO-BfW" firstAttribute="centerX" secondItem="Jea-oc-8xE" secondAttribute="centerX" id="d8M-WL-ndM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jea-oc-8xE" secondAttribute="bottom" id="dKw-ET-sOe"/>
                             <constraint firstItem="Jea-oc-8xE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="m1Q-z9-bt0"/>
+                            <constraint firstItem="euS-HR-xgT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="y0L-Ax-UnN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -36,17 +59,6 @@
                                 <action selector="ViewLocation:" destination="BYZ-38-t0r" id="S6f-gg-0bu"/>
                             </connections>
                         </barButtonItem>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kbI-Im-fxh">
-                            <rect key="frame" x="151" y="7" width="73" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="73" id="S5Q-C3-bE0"/>
-                            </constraints>
-                            <state key="normal" title="Send Alert"/>
-                            <connections>
-                                <action selector="SendAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K9K-9e-tFb"/>
-                            </connections>
-                        </button>
                         <barButtonItem key="rightBarButtonItem" image="plus.app" catalog="system" id="Syp-6A-KJ9">
                             <connections>
                                 <segue destination="nr1-3v-uu8" kind="presentation" id="flg-RC-Wma"/>

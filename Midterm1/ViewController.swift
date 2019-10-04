@@ -28,9 +28,15 @@ class ViewController: UIViewController {
         Map.ViewLocation()
     }
     
+    /*
     @IBAction func SendAlert(_ sender: Any) {
         // Send a test message as an alert
         displayAlert(withAlert: "Test", message: "Hello World!")
+    }
+    */
+    
+    @IBAction func Units(_ sender: Any) {
+        
     }
     
 }
