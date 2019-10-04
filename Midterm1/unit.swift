@@ -8,17 +8,25 @@
 
 import Foundation
 
+// Current unit selected by user.
+var int_type:DistanceUnit = .meter
+
 // Caskey, Damon V.
 // 2019-10-04
 //
 // Basic structure for distance units.
-enum UnitList {
-    case meter
-    case kilometer
+enum DistanceUnit {
     case foot
+    case kilometer
+    case meter
     case mile
-    
-    // User friendly labels.
+}
+
+// Caskey, Damon V.
+// 2019-10-04
+//
+// User friendly titles for buttons, text output, etc.
+extension DistanceUnit{
     var Label:String{
         switch self{
         case .foot: return "Feet"
@@ -27,8 +35,13 @@ enum UnitList {
         case .mile: return "Miles"
         }
     }
-    
-    // Calculation multipliers (vs. meters).
+}
+
+// Caskey, Damon V.
+// 2019-10-04
+//
+// Calculation multipliers (vs. meters).
+extension DistanceUnit{
     var Mutiplier:Double{
         switch self{
         case .foot: return 0.3048
@@ -37,18 +50,24 @@ enum UnitList {
         case .mile: return 1609.34
         }
     }
-    
-    // Calculate distance based on selected unit.
-    func ApplyUnit(unit: UnitList, size: Double) ->Double{
+}
+
+// Caskey, Damon V.
+// 2019-10-04
+//
+// Apply multiplier to distance based on selected unit and
+// return result.
+extension DistanceUnit{
+    func ApplyUnit(unit: DistanceUnit, size: Double) ->Double{
         switch unit {
         case .foot:
-            return size * UnitList.foot.Mutiplier
+            return size * DistanceUnit.foot.Mutiplier
         case .kilometer:
-            return size * UnitList.kilometer.Mutiplier
+            return size * DistanceUnit.kilometer.Mutiplier
         case .meter:
-            return size * UnitList.meter.Mutiplier
+            return size * DistanceUnit.meter.Mutiplier
         case .mile:
-            return size * UnitList.mile.Mutiplier
+            return size * DistanceUnit.mile.Mutiplier
         }
     }
 }
