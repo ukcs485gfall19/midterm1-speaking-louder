@@ -15,7 +15,7 @@ var int_type:DistanceUnit = .meter
 // 2019-10-04
 //
 // Basic structure for distance units.
-enum DistanceUnit:Int {
+enum DistanceUnit: Int {
     case foot
     case kilometer
     case meter
@@ -27,12 +27,12 @@ enum DistanceUnit:Int {
 //
 // User friendly titles for buttons, text output, etc.
 extension DistanceUnit{
-    var Label:String{
+    var Label: String{
         switch self{
-        case .foot: return "Feet"
-        case .kilometer: return "Kilometers"
-        case .meter: return "Meters"
-        case .mile: return "Miles"
+            case .foot: return "Feet"
+            case .kilometer: return "Kilometers"
+            case .meter: return "Meters"
+            case .mile: return "Miles"
         }
     }
 }
@@ -42,12 +42,12 @@ extension DistanceUnit{
 //
 // Calculation multipliers (vs. meters).
 extension DistanceUnit{
-    var Mutiplier:Double{
+    var Mutiplier: Double{
         switch self{
-        case .foot: return 0.3048
-        case .kilometer: return 1000.0
-        case .meter: return 1.0
-        case .mile: return 1609.34
+            case .foot: return 0.3048
+            case .kilometer: return 1000.0
+            case .meter: return 1.0
+            case .mile: return 1609.34
         }
     }
 }
