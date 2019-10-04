@@ -110,6 +110,10 @@
                                             <rect key="frame" x="0.0" y="21" width="375" height="207"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </mapView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="rAc-Hg-Zgt">
+                                            <rect key="frame" x="161" y="85" width="53" height="58"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -129,8 +133,8 @@
                                                 <action selector="Meters:" destination="mb1-wF-bfO" eventType="editingDidEnd" id="rW3-ub-V8F"/>
                                             </connections>
                                         </textField>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0j-Ah-BUs">
-                                            <rect key="frame" x="33" y="25" width="54" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Radius (m)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0j-Ah-BUs">
+                                            <rect key="frame" x="33" y="25" width="83" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -201,6 +205,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="256" height="256"/>
         <image name="arrowshape.turn.up.left.fill" catalog="system" width="64" height="52"/>
         <image name="plus.app" catalog="system" width="64" height="56"/>
     </resources>
