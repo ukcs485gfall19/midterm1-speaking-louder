@@ -102,22 +102,31 @@
                         <sections>
                             <tableViewSection id="ZBZ-11-0lC">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="133" id="lpu-zx-OXN">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="133"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="186" id="lpu-zx-OXN">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="186"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lpu-zx-OXN" id="5uL-5b-MMx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="186"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Bp9-gj-Dm7">
-                                                    <rect key="frame" x="78" y="2" width="240" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Bp9-gj-Dm7">
+                                                    <rect key="frame" x="0.0" y="2" width="375" height="184"/>
                                                 </mapView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="uhs-vj-eX1">
+                                                    <rect key="frame" x="157" y="63" width="60" height="62"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Bp9-gj-Dm7" firstAttribute="leading" secondItem="5uL-5b-MMx" secondAttribute="leadingMargin" id="3se-oe-gf2"/>
+                                                <constraint firstItem="Bp9-gj-Dm7" firstAttribute="top" secondItem="5uL-5b-MMx" secondAttribute="topMargin" id="AWb-r7-AdH"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Bp9-gj-Dm7" secondAttribute="trailing" id="Nm7-9E-ueJ"/>
+                                                <constraint firstItem="Bp9-gj-Dm7" firstAttribute="centerY" secondItem="5uL-5b-MMx" secondAttribute="centerY" id="QNd-uM-c94"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="97" id="mqH-L0-Fag">
-                                        <rect key="frame" x="0.0" y="161" width="375" height="97"/>
+                                        <rect key="frame" x="0.0" y="214" width="375" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mqH-L0-Fag" id="Hou-uk-qtU">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
@@ -140,7 +149,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="129" id="oib-sE-50S">
-                                        <rect key="frame" x="0.0" y="258" width="375" height="129"/>
+                                        <rect key="frame" x="0.0" y="311" width="375" height="129"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oib-sE-50S" id="LQj-0R-JXI">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
@@ -202,6 +211,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="256" height="256"/>
         <image name="arrowshape.turn.up.left.fill" catalog="system" width="64" height="52"/>
         <image name="plus.app" catalog="system" width="64" height="56"/>
     </resources>
