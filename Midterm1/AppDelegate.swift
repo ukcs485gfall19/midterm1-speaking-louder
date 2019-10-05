@@ -49,6 +49,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UNUserNotificationCenter.current().removeAllDeliveredNotifications()
     }
 
+    func handleEvent(for region: CLRegion!)
+    {
+        if UIApplication.shared.applicationState == .active
+        {
+            // send alert
+        }
+        else
+        {
+            // send notification
+        }
+    }
+    
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
@@ -56,3 +68,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        if region is CLCircularRegion
+        {
+            handleEvent(for: region)
+        }
+    }
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        if region is CLCircularRegion
+        {
+            handleEvent(for: region)
+        }
+    }
+
+}
