@@ -191,9 +191,18 @@
                                 <action selector="ViewLocation:" destination="BYZ-38-t0r" id="cFo-m5-qIG"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="5su-Nx-OVl">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VPY-n7-U2V">
+                                <rect key="frame" x="276" y="13" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add"/>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="AddButton" destination="5su-Nx-OVl" id="xHv-y8-FQr"/>
+                        <outlet property="Notes" destination="VV7-jg-03f" id="gnW-U5-7s3"/>
                         <outlet property="radius" destination="a9z-B2-zIW" id="wcI-Zg-FfZ"/>
                     </connections>
                 </tableViewController>

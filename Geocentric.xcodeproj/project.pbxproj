@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		528171882348185F004C0A1E /* Radius.swfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528171872348185F004C0A1E /* Radius.swfit.swift */; };
+		528171882348185F004C0A1E /* Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528171872348185F004C0A1E /* Radius.swift */; };
 		DD69D7C4233141900009D62E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69D7C3233141900009D62E /* AppDelegate.swift */; };
 		DD69D7C6233141900009D62E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69D7C5233141900009D62E /* ViewController.swift */; };
 		DD69D7C9233141900009D62E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD69D7C7233141900009D62E /* Main.storyboard */; };
@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		528171872348185F004C0A1E /* Radius.swfit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radius.swfit.swift; sourceTree = "<group>"; };
+		528171872348185F004C0A1E /* Radius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radius.swift; sourceTree = "<group>"; };
 		DD69D7C0233141900009D62E /* Geocentric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geocentric.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD69D7C3233141900009D62E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD69D7C5233141900009D62E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,12 +58,11 @@
 			children = (
 				DD69D7C3233141900009D62E /* AppDelegate.swift */,
 				DD69D7C5233141900009D62E /* ViewController.swift */,
-				528171872348185F004C0A1E /* Radius.swfit.swift */,
+				528171872348185F004C0A1E /* Radius.swift */,
 				DD69D7C7233141900009D62E /* Main.storyboard */,
 				DD69D7CA233141920009D62E /* Assets.xcassets */,
 				DD69D7CC233141920009D62E /* LaunchScreen.storyboard */,
 				DD69D7CF233141920009D62E /* Info.plist */,
-				85C548762347CB48007CC6B4 /* unit.swift */,
 			);
 			path = Midterm1;
 			sourceTree = "<group>";
@@ -139,10 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				528171882348185F004C0A1E /* Radius.swfit.swift in Sources */,
+				528171882348185F004C0A1E /* Radius.swift in Sources */,
 				DD69D7C6233141900009D62E /* ViewController.swift in Sources */,
 				DD69D7C4233141900009D62E /* AppDelegate.swift in Sources */,
-				85C548772347CB48007CC6B4 /* unit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
