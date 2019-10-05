@@ -12,13 +12,39 @@ import MapKit
 
 class Radius: UITableViewController {
     
-    @IBOutlet weak var radius: UITextField!
-    @IBOutlet weak var Notes: UITextField!
+    @IBOutlet weak var radiusField: UITextField!
+    @IBOutlet weak var notesField: UITextField!
     @IBOutlet weak var AddButton: UIBarButtonItem!
     @IBOutlet weak var Map: MKMapView!
     
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationItem.rightBarButtonItem = AddButton
+        AddButton.isEnabled = false
+    }
+    
+    @IBAction func zoomToUser(sender: AnyObject)
+    {
+        Map.ViewLocation()
+    }
+    
+
+    @IBAction func textFieldEditChange(sender: UITextField)
+    {
+        AddButton.isEnabled = !radiusField.text!.isEmpty && !notesField.text!.isEmpty
+    }
+    
     var radiusNumber: Int = 0
     @IBAction func radiusAction(_ sender: Any) {
-        radiusNumber = Int(radius.text!)!
+        radiusNumber = Int(radiusField.text!)!
+    }
+    
+    @IBAction private func onAdd(sender: AnyObject)
+    {
+        let coords = Map.centerCoordinate
+        let radius = Double(radiusField.text!)
+        let note = notesField.text
+        print("foo")
     }
 }
