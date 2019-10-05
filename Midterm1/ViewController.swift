@@ -12,6 +12,7 @@ import MapKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var Map: MKMapView!
+    @IBOutlet weak var segmentControl: UISegmentedControl!
     
     let locationManager = CLLocationManager()
     
@@ -22,7 +23,8 @@ class ViewController: UIViewController {
         locationManager.requestAlwaysAuthorization()
         // Do any additional setup after loading the view.
     }
-
+    
+    
     @IBAction func ViewLocation(_ sender: Any) {
         // Zoom to User's location
         Map.ViewLocation()
@@ -34,9 +36,21 @@ class ViewController: UIViewController {
         displayAlert(withAlert: "Test", message: "Hello World!")
     }
     */
+    var radius: Double = 0
+    @IBAction func radiusEntry(_ sender: Any) {
+        
+    }
     
     @IBAction func Units(_ sender: Any) {
-        
+        switch segmentControl.selectedSegmentIndex {
+            
+        case 0:
+            print("1")
+        case 1:
+            print("2")
+        default:
+            print("0")
+        }
     }
     
 }
@@ -70,6 +84,21 @@ extension UIViewController
         let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
+    }
+}
+
+func checkUnit(Unit: String, size: Double) -> Double {
+    switch Unit {
+    case "meters":
+        return size
+    case "feet":
+        return size*0.3048
+    case "miles":
+        return size*1609.34
+    case "kilometers":
+        return size*1000
+    default:
+        return size
     }
 }
 
