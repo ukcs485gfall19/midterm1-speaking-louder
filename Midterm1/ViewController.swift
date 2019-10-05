@@ -16,13 +16,19 @@ class ViewController: UIViewController {
     
     let locationManager = CLLocationManager()
     
+    
+    var radius = 5
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
         // request for the user's location
         locationManager.requestAlwaysAuthorization()
         // Do any additional setup after loading the view.
+       
     }
+    
+    lazy var radiusTotal = checkUnit(Unit: unit, size: Double(radius))
     
     
     @IBAction func ViewLocation(_ sender: Any) {
@@ -36,24 +42,27 @@ class ViewController: UIViewController {
         displayAlert(withAlert: "Test", message: "Hello World!")
     }
     */
-    var radius: Double = 0
-    @IBAction func radiusEntry(_ sender: Any) {
-        
-    }
-    
+   
+    var unit: String = " "
     @IBAction func Units(_ sender: Any) {
         switch segmentControl.selectedSegmentIndex {
             
         case 0:
-            print("1")
+            unit = "meters"
         case 1:
-            print("2")
+            unit = "feet"
+        case 2:
+            unit = "miles"
+        case 3:
+            unit = "kilometers"
         default:
-            print("0")
+            unit = "meters"
         }
     }
     
 }
+
+
 
 extension ViewController: CLLocationManagerDelegate
 {

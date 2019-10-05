@@ -95,7 +95,7 @@
         <!--Add Waypoint-->
         <scene sceneID="O1F-ic-z9X">
             <objects>
-                <tableViewController id="f9m-jE-8qm" sceneMemberID="viewController">
+                <tableViewController id="f9m-jE-8qm" customClass="Radius" customModule="Geocentric" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gg6-Uc-EiI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,6 +139,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
+                                                        <action selector="radiusAction:" destination="f9m-jE-8qm" eventType="editingDidEnd" id="iT4-ad-8Fn"/>
                                                         <action selector="radiusEntry:" destination="M1w-PI-iEK" eventType="editingDidEnd" id="oP4-CO-G2x"/>
                                                     </connections>
                                                 </textField>
@@ -192,6 +193,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="radius" destination="a9z-B2-zIW" id="wcI-Zg-FfZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQd-uu-GPU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="M1w-PI-iEK" userLabel="Exit" sceneMemberID="exit"/>
