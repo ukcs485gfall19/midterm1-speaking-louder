@@ -10,13 +10,18 @@ import Foundation
 import UIKit
 import MapKit
 
-class Radius: UITableViewController {
+protocol RadiusViewControllerDelegate {
+    func RadiusViewController(_ controller: RadiusViewController, didAddCoordinate coordinate: CLLocationCoordinate2D,radius: Double, identifier: String, note: String)
+}
+
+class RadiusViewController: UITableViewController {
     
     @IBOutlet weak var radiusField: UITextField!
     @IBOutlet weak var notesField: UITextField!
     @IBOutlet weak var AddButton: UIBarButtonItem!
     @IBOutlet weak var Map: MKMapView!
     
+    var delegate: RadiusViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,9 +47,11 @@ class Radius: UITableViewController {
     
     @IBAction private func onAdd(sender: AnyObject)
     {
-        let coords = Map.centerCoordinate
-        let radius = Double(radiusField.text!)
+        let coordinate = Map.centerCoordinate
+        let radius = Double(radiusField.text!) ?? 0
+        let identifier = NSUUID().uuidString
         let note = notesField.text
-        print("foo")
+        delegate?.RadiusViewController(self, didAddCoordinate: coordinate, radius: radius, identifier: identifier, note: note!)
+        
     }
 }
