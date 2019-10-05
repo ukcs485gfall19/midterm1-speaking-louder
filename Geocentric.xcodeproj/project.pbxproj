@@ -63,6 +63,7 @@
 				DD69D7CA233141920009D62E /* Assets.xcassets */,
 				DD69D7CC233141920009D62E /* LaunchScreen.storyboard */,
 				DD69D7CF233141920009D62E /* Info.plist */,
+				85C548762347CB48007CC6B4 /* unit.swift */,
 			);
 			path = Midterm1;
 			sourceTree = "<group>";
@@ -141,6 +142,7 @@
 				528171882348185F004C0A1E /* Radius.swfit.swift in Sources */,
 				DD69D7C6233141900009D62E /* ViewController.swift in Sources */,
 				DD69D7C4233141900009D62E /* AppDelegate.swift in Sources */,
+				85C548772347CB48007CC6B4 /* unit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

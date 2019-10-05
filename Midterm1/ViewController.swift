@@ -96,8 +96,6 @@ extension UIViewController
     }
 }
 
-
-
 func checkUnit(Unit: String, size: Double) -> Double {
     switch Unit {
     case "meters":
@@ -112,3 +110,4 @@ func checkUnit(Unit: String, size: Double) -> Double {
         return size
     }
 }
+
